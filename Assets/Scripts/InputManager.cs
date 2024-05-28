@@ -19,6 +19,7 @@ public class InputManager : MonoBehaviour
         look = GetComponent<PlayerLook>();
         onFoot.Jump.performed += callback => motor.Jump();
         onFoot.Crouch.performed += callback => motor.Crouch();
+        onFoot.Sprint.performed += callback => motor.Sprint();
     }
 
     void FixedUpdate()
